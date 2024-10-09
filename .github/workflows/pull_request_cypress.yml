@@ -84,7 +84,7 @@ jobs:
         id: cypress
         run: |
           echo "this is mock cypress outcome"
-          exit 1
+          # exit 1
 
       # - name: Check user permission
       #   uses: actions-cool/check-user-permission@v2
