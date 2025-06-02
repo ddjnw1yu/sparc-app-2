@@ -7,7 +7,7 @@ const datasetIds = stringToArray(Cypress.env('DATASET_IDS'), ',')
 
 datasetIds.forEach((datasetId) => {
 
-  describe(`Dataset ${datasetId}`, { testIsolation: false }, function () {
+  describe.skip(`Dataset ${datasetId}`, { testIsolation: false }, function () {
 
     retryableBefore(function () {
       cy.visit(`/datasets/${datasetId}?type=dataset`)

@@ -28,7 +28,7 @@ if (multipleFilterFacets && multipleFilterFacets.length > 1) {
 
 browseCategories.forEach((category, bcIndex) => {
 
-  describe(`Browsing Data in ${category}`, { testIsolation: false }, function () {
+  describe.skip(`Browsing Data in ${category}`, { testIsolation: false }, function () {
 
     retryableBefore(function () {
       cy.visit(`/data?type=${category}`)

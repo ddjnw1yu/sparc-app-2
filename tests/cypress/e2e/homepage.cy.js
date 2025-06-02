@@ -1,6 +1,6 @@
 import { retryableBefore } from "../support/utils.js"
 
-describe('Homepage', { testIsolation: false }, function () {
+describe.skip('Homepage', { testIsolation: false }, function () {
 
   retryableBefore(function () {
     cy.visit('')

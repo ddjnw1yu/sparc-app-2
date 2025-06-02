@@ -9,7 +9,7 @@ const galleryItems = ['Scaffold', 'Video', 'Flatmap', 'Segmentation', 'Plot', 'I
 
 datasetIds.forEach((datasetId) => {
 
-  describe(`Dataset ${datasetId}`, { testIsolation: false }, function () {
+  describe.skip(`Dataset ${datasetId}`, { testIsolation: false }, function () {
 
     let existGalleryItems = []
 

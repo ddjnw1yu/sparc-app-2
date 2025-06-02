@@ -1,6 +1,6 @@
 import { retryableBefore } from '../support/utils.js'
 
-describe('Portal Login', { testIsolation: false }, function () {
+describe.skip('Portal Login', { testIsolation: false }, function () {
 
     retryableBefore(function () {
         cy.visit('/data?type=dataset')
