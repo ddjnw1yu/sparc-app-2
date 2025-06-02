@@ -37,7 +37,7 @@ export default defineConfig({
       // datasets.js
       DATASET_IDS: process.env.DATASET_IDS ? process.env.DATASET_IDS : '54, 76, 117, 226, 385',
       // mapsviewer.js
-      TAXON_MODELS: process.env.TAXON_MODELS ? process.env.TAXON_MODELS : 'Rat, Pig',
+      TAXON_MODELS: process.env.TAXON_MODELS ? process.env.TAXON_MODELS : 'Human Female, Human Male, Rat, Mouse, Pig, Cat',
       THREE_SYNC_VIEW: process.env.THREE_SYNC_VIEW ? process.env.THREE_SYNC_VIEW : 'Human Male',
       SEARCH_IN_MAP: process.env.SEARCH_IN_MAP ? process.env.SEARCH_IN_MAP : 'Heart',
       SCAFFOLD_DATASET_IDS: process.env.SCAFFOLD_DATASET_IDS ? process.env.SCAFFOLD_DATASET_IDS : '100, 103',

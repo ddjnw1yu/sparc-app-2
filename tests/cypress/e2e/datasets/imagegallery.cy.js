@@ -28,6 +28,7 @@ datasetIds.forEach((datasetId) => {
         const response = intercept.response.body.result[0]
         // Check if gallery cards loaded
         if (
+          response &&
           ('abi-scaffold-metadata-file' in response && response['abi-scaffold-metadata-file'].length) ||
           ('video' in response && response['video'].length) ||
           ('organs' in response && response['organs'].length) ||

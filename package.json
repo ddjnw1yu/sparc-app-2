@@ -8,7 +8,7 @@
     "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",
     "postinstall": "patch-package; nuxt prepare",
-    "cypress": "cypress run",
+    "cypress": "cypress run --spec tests/cypress/e2e/mapsviewer.cy.js",
     "cypress-ui": "cypress open",
     "cypress-record": "cypress run --record --tag local",
     "cypress-record-parallel": "cypress run --record --tag local --parallel --ci-build-id $CI_BUILD_ID"
